@@ -1,19 +1,19 @@
-const Header = (props) => {
-  console.log(props)
+const Header = ({title}) => {
+  console.log(title)
   return (
     <div>
       <h1>
-       {props.title}
+       {title}
       </h1>
     </div>
   )
 }
 
-const Part = (props) => {
+const Part = ({name, exercises}) => {
   return (
     <div>
       <p>
-        {props.name} {props.exercises}
+        {name} {exercises}
       </p>
     </div>
   )
@@ -30,12 +30,12 @@ const Content = (props) => {
   )
 }
 
-const Total = (props) => {
-  console.log(props)
+const Total = ({number}) => {
+  console.log(number)
   return (
     <div>
       <p>
-        Number of exercises {props.number}
+        Number of exercises {number}
       </p>
     </div>
   )
