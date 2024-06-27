@@ -1,3 +1,9 @@
+import PlaygroundTwo from './playground/PlaygroundTwo.jsx'
+import PlaygroundThree from './playground/PlaygroundThree.jsx'
+import PlaygroundFour from './playground/PlaygroundFour.jsx'
+import Playground from './playground/Playground.jsx'
+
+
 const Header = ({title}) => {
   console.log(title)
   return (
@@ -23,8 +29,8 @@ const Content = (props) => {
   console.log(props)
   return (
     <div>
-      {props.parts.map((part) => (
-        <Part name={part.name} exercises={part.exercises} />
+      {props.parts.map((part, index) => (
+        <Part key={index} name={part.name} exercises={part.exercises} />
       ))}
     </div>
   )
@@ -71,6 +77,14 @@ const App = () => {
       <Header title={course.title}  />
       <Content parts={course.parts} />
       <Total number={totalExercises} />
+      <br />
+      <Playground />
+      <br />
+      <PlaygroundTwo />
+      <br />
+      <PlaygroundThree />
+      <br />
+      <PlaygroundFour />
     </div>
   )
 }
