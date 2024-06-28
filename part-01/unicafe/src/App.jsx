@@ -18,6 +18,13 @@ const StatisticLine = (props) => {
 }
 
 const Statistic = (props) => {
+  if (props.totalFeedback === 0) {
+    return (
+      <div>
+        <p>No feedback given</p>
+      </div>
+    )
+  }
   return (
     <table>
       <tbody>
@@ -87,7 +94,7 @@ const App = () => {
       </div>
 
       <h2>Statistics</h2>
-      <Statistic feedbacks={feedbacks} />
+      <Statistic feedbacks={feedbacks} totalFeedback={totalFeedback} />
       <Total total={totalFeedback} average={totalAverage} positive={totalPositive} />
     </div>
   )
