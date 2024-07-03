@@ -24,10 +24,12 @@ const PlaygroundFour = () => {
     const [result, setResult] = useState(0)
 
     const handlePriceChange = (props) => {
+        console.log('Price changed to:', props.target.value);
         setPrice(props.target.value)
     }
 
     const handleDiscountChange = (props) => {
+        console.log('Discount changed to:', props.target.value);
         setDiscount(props.target.value)
     }
 
