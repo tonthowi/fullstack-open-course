@@ -35,6 +35,30 @@ h1 {
   line-height: 1.1;
 }
 
+.success {
+  color: green;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+  padding: 1em 1.5em;
+  border-radius: 8px;
+  border: 1px solid green;
+  background: lightgreen;
+}
+
+.error {
+  color: red;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 0.5em 0;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f8d7da;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
