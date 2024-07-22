@@ -71,7 +71,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Notes</h1>
+      <h1>Notes Fullstack Open Course</h1>
       <Notification message={errorMessage} />
       <button
         onClick={() => {
